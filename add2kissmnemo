@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+if [[ $1 == "once" ]] ; then
+  dead=$2
+  #remind=$3
+  
+  vim $HOME/.kiss-mnemo/once/"$dead" #-"$remind"
+fi
+

@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+kmdir=$HOME/.kiss-mnemo
+today=$(date +%F)
+echo "Today once :"
+
+if find "$kmdir/once/$today" 2>&1 > /dev/null ; then
+  cat "$kmdir/once/$today"
+else
+  echo "Nothing today"
+fi
